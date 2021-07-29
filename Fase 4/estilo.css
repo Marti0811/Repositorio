@@ -1,0 +1,152 @@
+
+*{
+
+   padding: 0px;
+   margin: 0px;
+}
+body{
+
+   font-family: Arial, Helvetica, sans-serif;
+   background: #e8e8e8;
+   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+   color: #000000;
+
+}
+.menu{
+   list-style: none;
+   padding:0;
+   background: #092327;
+   width: 90%;
+   max-width: 2000px;
+   margin:auto;
+}
+
+.menu li a{
+   text-decoration:none;
+   color:white;
+   padding: 10px 15px;
+   display:block;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+
+}
+
+#header{
+
+margin:auto;
+width: 500px;
+
+}
+.menu li a:hover{
+   background: #ef8351;
+
+}
+
+.menu >li{
+
+   float:left;
+}
+.nav li ul{
+   position: absolute;
+   min-width: 140px;
+   display:none;
+}
+
+.menu li:hover > ul{
+
+  display:block;
+  
+}
+.container {
+   width: 90%;
+   max-width: 1000px;
+   margin: 1.6em auto;
+   display: grid;
+   gap: 1.6em;
+   /* grid-template-columns: repeat(4, 1fr) 3%; */
+   grid-template-columns: repeat(5, 1fr);
+}
+
+.container>.header, .container>.content, .container>.sidebar, .container>.footer, .container>div {
+   background: #fff;
+   padding: 20px;
+   border: 1px solid #000000;
+}
+
+.container>.header, .container>.footer {
+   grid-column: 1/-1;
+   background-color: #1e272e;
+   color: #ffffff;
+}
+
+.container>.content {
+   grid-column: span 3;
+   grid-row: span 4;
+}
+
+.content>.article {
+   background: #808e9b;
+   padding: 20px;
+   margin-top: 5px;
+   color: #dfe6e9
+}
+
+.content .article h1,
+.content .article p {
+   padding: 10px;
+}
+
+.container>.sidebar {
+   grid-column: span 2;
+   grid-row: span 4;
+   background: #485460;
+   color: #ffffff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container .sidebar img {
+   display: block;
+   width: 100%;
+   margin-top: 5px;
+}
+
+.container>.related-post {
+   background: #2d3436;
+   color: #ffffff;
+   height: 180px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.5s ease;
+}
+
+.container>.related-post:hover {
+   cursor: pointer;
+   color: #000000;
+   background: #ffffff;
+}
+
+h1 {
+
+   font-size: 30px;
+}
+input{
+
+   margin-top:20px;
+}
+
+.box{
+
+   padding: 40px;
+   width: 500px;
+   border-radius: 10px;
+   -webkit-box-shadow: -1px 8px 15px 0px rgba(0,0,0,0.5);
+   -moz-box-shadow: -1px, 8px, 15px, 0px rgba(0,0,0,0.5) ;
+   box-shadow: -1px 8px 15px 0px rgba(0,0,0,0.5) ;
+
+}

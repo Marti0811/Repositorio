@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fase 3 Diseño y Construccion</title>
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <ul class=" menu">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="Etiquetas.html">Temas</a>
+                    <ul>
+                        <li><a href="Etiquetas.html"></a>Etiquetas semánticas</li>
+                        <br>
+                        <li><a href="Listas.html"></a>Listas</li>
+                        <br>
+                        <li><a href="Enlaces.html"></a>Enlaces</li>
+                    </ul>
+
+                <li><a href="recurso1.html">Recursos Digitales</a>
+                    <ul>
+                        <li><a href="recurso1.html"></a>Recurso1</li>
+                        <br>
+                        <li><a href="recurso1.html"></a>Recurso 2</li>
+                        <br>
+                    </ul>
+                </li>
+
+                <li><a href="Aprendizaje1.html">Aprendizaje </a>
+                    <ul>
+                        <li><a href= "Aprendizaje1.html"></a>Aprendizaje1</li>
+                        <br>
+                        <li><a href= "Aprendizaje2.html"></a>Aprendizaje2</li>
+                        <br>
+                      </ul>    
+                
+                  </li>  
+                <li><a href="autor.html">Autor</a></li>
+            </ul>
+        </header>
+
+
+        <main class="content">
+            <article class="article">
+                <h1>-TIPOS DE ENLACE HTML</h1>
+                <p>Lo que caracteriza a la web como medio de comunicación es la navegación por medio de hipervínculos
+                    (links o enlaces). Esta conexión entre archivos permite al usuario elegir el sentido de la
+                    navegación.
+                    En el HTML los enlaces se marcan con la etiqueta (a) (/a) y el atributo principal es href="" donde
+                    se
+                    escribe la ubicación del archivo de destino que puede estar en la misma carpeta que el archivo que
+                    lo está llamando, en otra carpeta del mismo sitio o en otro sitio web.</p>
+
+            </article>
+
+            <article class="article">
+                <h1>-RUTAS DE ENLACE</h1>
+                <p>Se llama ruta al valor que se escribe dentro del atributo href="" y se pueden clasificar en dos
+                    tipos:</p>
+                <br>
+                <h2>Rutas absolutas</h2>
+                <p>Las rutas absolutas son las que definen la ubicación completa de un archivo en la web y empiezan
+                    desde https://nombredelsitio.com/archivo.html (el archivo de destino puede ser de cualquier
+                    extensión). </p>
+                <br>
+                <h2>Rutas relativas</h2>
+                <p>Las rutas relativas en cambio, definen la ubicación del archivo de destino en relación a
+                    la ubicación del archivo que lo está llamando.</p>
+
+            </article>
+            <article class="article">
+                <h1>-TIPOS DE ENLACE</h1>
+                <br>
+                <h2>Enlaces Internos entre archivos .html</h2>
+                <p>Son los enlaces principales de un sitio. Si en el archivo index.html,
+                    queremos agregar un vínculo a contacto.html </p>
+                <br>
+                <h2>Enlaces externos</h2>
+                <p>Son los enlaces entre diferentes sitios web. Si queremos vincular un sitio web con otro, tenemos que
+                    indicar la ruta absoluta del sitio escribiendo la url completa que conviene copiarla del navegador.
+                    En este caso, es común usar el atributo target="" que nos permite abrir el enlace en una pestaña
+                    nueva.</p>
+                <br>
+                <h2>Enlaces internos: anclas</h2>
+                <p>Las anclas son enlaces hacia un punto determinado dentro de un html. Se usa en varios casos, por
+                    ejemplo en una página de preguntas frecuentes donde las respuestas están desarrolladas debajo de las
+                    preguntas, o en Wikipedia, cuando el texto es extenso el menú tiene vínculos con anclas.
+                    El punto de destino tiene que estar marcado con el atributo id="algo" y en el enlace se coloca
+                    un # (numeral) seguido del nombre.</p>
+                <br>
+                <h2>Enlaces para ampliar una imagen</h2>
+                <p>Es común armar una galería de fotos con imágenes miniaturas que vinculan a imágenes ampliadas. Si
+                    combinamos
+                    este recurso con código javascript, logramos galerías de fotos muy atractivas.</p>
+                <br>
+                <h2>Enlaces para descargar archivos</h2>
+                <p>En realidad, dentro del atributo href="" podemos colocar la ruta hacia cualquier tipo de archivo.
+                    Si el navegador reconoce la extensión, lo abre por ejemplo: html, jpg, png, gif, svg, pdf, etc.
+                    Pero si no lo reconoce o es un archivo comprimido (.rar, .zip), el navegador le ofrece al usuario
+                    descargarlo.</p>
+
+                <br>
+                <h2>Enlaces a una dirección de correo</h2>
+                <p>Este recurso está bastante cuestionado por dos razones: primero porque muchos usuarios utilizan
+                    correo webmail (Gmail, Yahoo, Hotmail) por lo que este enlace no les sirve (incluso molesta)
+                    y segundo porque les estamos facilitando a los robots que encuentren nuestro correo y lo incluyan
+                    en una base de datos para spam.</p>
+            </article>
+
+            <br>
+            <p> 
+                Chuburu,Laura. (2020). Tipos de enlaces en HTML
+                https://www.laurachuburu.com.ar/tutoriales/enlaces-html.php </p>
+        </main>
+
+        <aside class="sidebar">
+            <div>
+                <h2>Figura 1</h2>
+                <p>Imagen estructura ruta absoluta</p>
+                <img src="imagenes/rutabsoluta.png" alt="">
+                </article>
+                <br>
+                <div>
+                    <h2>Figura 2</h2>
+                    <p>Imagen estructura ruta relativa</p>
+                    <img src="imagenes/rutasrelativas.png" alt="">
+
+                    </article>
+                    <br>
+                    <div>
+                        <h2>Figura 3</h2>
+                        <p>Imagen estructura enlaces internos entre archivos</p>
+                        <img src="imagenes/enlacesinternos.png" alt="">
+                        <br>
+                        </article>
+                        <br>
+                        <div>
+                            <h2>Figura 4</h2>
+                            <p>Imagen estructura enlaces externos</p>
+                            <img src="imagenes/enlacesexternos.png" alt="">
+                            <br>
+                            </article>
+                            <br>
+                            <div>
+                                <h2>Figura 5</h2>
+                                <p>Imagen estructura enlaces internos:anclas</p>
+                                <img src="imagenes/anclas.png" alt="">
+                                <br>
+                                </article>
+                                <br>
+                            <div>
+                                <h2>Figura 6</h2>
+                                <p>Imagen estructura enlace para ampliar una imagen</p>
+                                <img src="imagenes/imagen.png" alt="">
+                                <br>
+                                </article>
+                                <br>
+                                <div>
+                                    <h2>Figura 7</h2>
+                                    <p>Imagen estructura enlace para descargar archivos</p>
+                                    <img src="imagenes/descragas.png" alt="">
+                                    <br>
+                                    </article>
+                                    <br>
+                                <div>
+                                    <h2>Figura 8</h2>
+                                    <p>Imagen estructura enlace para direccion de correos</p>
+                                    <img src="imagenes/correo.png" alt="">
+                                    <br>
+                                    </article>
+        </aside>
+
+
+
+        <footer class="footer">
+
+            <p>Correo: Cesar-0811@hotmail.com Skype: Fecha:18/07/2021</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
